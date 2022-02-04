@@ -1,0 +1,146 @@
+html {
+  --Very-dark-blue-mainBG: hsl(217, 54%, 11%);
+  --Very-dark-blue-cardBG: hsl(216, 50%, 16%);
+  --Very-dark-blue-line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--Very-dark-blue-mainBG);
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.container {
+  width: 250px;
+  height: 450px;
+  background-color: var(--Very-dark-blue-cardBG);
+  margin: 100px auto;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 10px;
+  position: relative;
+}
+
+.main-picture .gambar1 {
+  width: 220px;
+  height: 220px;
+  display: flex;
+  margin: auto;
+  border-radius: 10px;
+  background-image: url(images/image-equilibrium.jpg);
+  background-size: cover;
+  margin-top: 5px;
+}
+
+.main-picture .gambar2 {
+  position: absolute;
+  top: 0;
+  width: 220px;
+  height: 220px;
+  display: flex;
+  margin: auto;
+  border-radius: 10px;
+  margin-top: 14px;
+  margin-left: 4px;
+  background-image: none;
+  /* background-color: white; */
+}
+
+.main-picture .gambar2:hover {
+  background-image: url(images/icon-view.svg);
+  background-color: var(--Cyan);
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  /* gambar biar berada ditengah */
+  background-position: 50% 50%;
+  transition: background-color 0.5s;
+  cursor: pointer;
+}
+
+.middle {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.main .judul-main {
+  color: var(--White);
+}
+
+.main .judul-main:hover {
+  cursor: pointer;
+  color: var(--Cyan);
+  transition: 1s;
+}
+
+.main .isi-main {
+  color: var(--Soft-blue);
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+.isi2-main {
+  display: flex;
+  margin-top: 5px;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+}
+
+.kolom1-main {
+  display: flex;
+}
+
+.kolom2-main {
+  display: flex;
+}
+
+.isi2-main .ETH-main {
+  color: var(--Cyan);
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.kolom2-main .Time-main {
+  font-size: 12px;
+  color: var(--Soft-blue);
+  margin-left: 5px;
+}
+
+.footer {
+  display: flex;
+  margin-top: 2px;
+  padding: 10px;
+}
+
+.footer .main-avatar img {
+  width: 25px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.footer .isi3-main {
+  font-size: 12px;
+  color: var(--Soft-blue);
+  margin-left: 15px;
+  line-height: 25px;
+}
+
+.footer .isi3-main span {
+  font-size: 12px;
+  color: var(--White);
+}
+
+.footer .isi3-main span:hover {
+  font-size: 12px;
+  color: var(--Cyan);
+  cursor: pointer;
+  transition: 1s;
+}
